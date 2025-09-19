@@ -1,5 +1,5 @@
 import React from "react";
-import "../assets/styles/Footer.css";
+import "../assets/styles/footer.css";
 
 // Import your PNG images
 import githubIcon from "../assets/images/icons/github.png";
