@@ -10,7 +10,7 @@ import "swiper/css/navigation";
 
 // import projects images
 import weatherImg from "../assets/images/projectsImages/weather.jpg";
-import currencyImg from "../assets/images/projectsImages/currency.png";
+import currencyImg from "../assets/images/projectsImages/currency.PNG";
 import todoImg from "../assets/images/projectsImages/todo.png";
 import calculatorImg from "../assets/images/projectsImages/calculator.png";
 import portfolio from "../assets/images/projectsImages/portfolio.jpg";
