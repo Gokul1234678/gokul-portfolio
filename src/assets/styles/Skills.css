@@ -1,0 +1,87 @@
+/* skill start */
+.skill-container {
+    background-color: #fff;
+    color: #000;
+}
+
+.skill-div1 p {
+    font-size: 40px;
+}
+
+.skill-div2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 0 3%;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    width: 180px;              /* fixed box size */
+    height: 180px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    background-color: white;
+    transition: transform 0.3s ease;
+}
+
+.skill:hover {
+    transform: scale(1.1);
+}
+
+/* FontAwesome icons */
+.skill-icon {
+    font-size: 100px;
+    margin-bottom: 10px;
+}
+
+/* Images for missing logos */
+.skill-img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;  /* keeps ratio */
+    margin-bottom: 10px;
+}
+
+.skill p {
+    margin: 5px 0 0;
+    font-size: 16px;
+}
+
+/* Responsive */
+@media all and (max-width:1000px) {
+   
+
+    .skill-div1 h2 {
+        font-size: 4vw;
+    }
+
+    .skill {
+        width: 140px;
+        height: 140px;
+    }
+
+    .skill-icon {
+        font-size: 80px;
+    }
+
+    .skill-img {
+        width: 80px;
+        height: 80px;
+    }
+}
+/* skill end */
+
+
+
+
+
+

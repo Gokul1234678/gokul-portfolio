@@ -1,0 +1,141 @@
+
+
+/* color variables are in global css file */
+
+nav {
+  font-size: 28px;
+  padding: 20px;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bolder;
+  padding-left: 20px;
+  color: var(--voilet);
+  font-weight: 300;
+  font-style: normal;
+  transition: transform 0.3s ease;
+}
+.logo:hover {
+  cursor: default;
+  transform: scale(1.05); /* small zoom effect */
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--black);
+  font-weight: 350;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+nav a:hover {
+  color: var(--red);
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 8px;
+}
+nav ul {
+  padding-right: 30px;
+  transition: all 0.4s ease-in-out;
+}
+
+/* Hamburger menu styles */
+.menu {
+  cursor: pointer;
+  display: none;
+  transition: transform 0.3s ease;
+}
+.menu:hover {
+  /* transform: rotate(5deg) scale(1.1); */
+}
+.menu-line {
+  height: 3px;
+  width: 30px;
+  background-color: var(--black);
+  margin-bottom: 6px;
+  border-radius: 2px;
+  transition: background 0.3s ease;
+}
+.menu:hover .menu-line {
+  background-color: var(--voilet);
+}
+
+/* Responsive menu animation */
+@media all and (max-width: 1100px) {
+  nav {
+    flex-direction: column;
+    font-size: 40px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav li {
+    display: block;
+    margin: 15px 0;
+  }
+
+  nav li a {
+    font-size: 0.7em;
+    font-weight: 500;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background: var(--white);
+    border-radius: 10px;
+    margin-top: 15px;
+    padding: 10px 0;
+    box-shadow: var(--menu-shadow);
+  }
+
+  .show-menu {
+    display: flex;
+    animation: slideDown 0.5s ease forwards;
+  }
+
+  .show-menu li a {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .logo {
+    align-self: flex-start;
+    font-size: 10vw;
+    font-weight: bolder;
+  }
+
+  .menu {
+    display: block;
+    position: absolute;
+    top: 9vw;
+    right: 5vw;
+  }
+}
+
+/* Keyframe animation */
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
