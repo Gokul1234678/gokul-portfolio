@@ -63,7 +63,7 @@ const Skills = () => {
 
 
                             <div className="skill" data-aos="zoom-in">
-                                <i class="fa-brands fa-node-js skill-icon" style={{ color: "#81CE27" }}></i>
+                                <i className="fa-brands fa-node-js skill-icon" style={{ color: "#81CE27" }}></i>
                                 <p>Node js</p>
                             </div>
                             <div className="skill" data-aos="zoom-in">

@@ -38,9 +38,9 @@ const projects = [
         title: "Portfolio",
         description: "A personal portfolio website showcasing my projects, skills, and contact information.",
         image: portfolio,
-        tech: ["HTML", "CSS", "JavaScript"],
-        code: "https://github.com/your-repo/portfolio",
-        live: "https://gokul.web.app",
+        tech: ["react","HTML", "CSS", "AOS","netlify"],
+        code: "https://github.com/Gokul1234678/gokul-portfolio/",
+        live: "https://gokul-selvan-dev.netlify.app/",
     },
     {
         id: 3,
@@ -65,7 +65,7 @@ const projects = [
         title: "React Calculator",
         description: "A responsive calculator app for performing basic operations.",
         image: calculatorImg,
-        tech: ["HTML", "CSS","React"],
+        tech: ["React","HTML", "CSS",],
         code: "https://github.com/Gokul1234678/react_calculator",
         live: "https://react-calculator-chi-opal.vercel.app/",
     },
@@ -103,7 +103,7 @@ const ProjectSlider = () => {
                             pagination={{ clickable: true }}
                             navigation
                             autoplay={{
-                                delay: 1500,
+                                delay: 2000,
                                 pauseOnMouseEnter: true, // ✅ pauses when hovered
                                 disableOnInteraction: false, // ✅ keeps autoplay running after interactions
                             }}
