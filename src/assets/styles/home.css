@@ -156,28 +156,26 @@ box-shadow: 0 0 50px 10px rgba(123, 8, 255, 0.6),
 /* main-btn-container start */
 .main-btn-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-
+    grid-template-columns: 1fr;
+    
 }
 
 .main-btn-container a {
-   
     text-align: center;
     text-decoration: none;
     color: white;
     font-weight: 400;
     padding: 13px;
     border-radius: 18px;
-
     font-family: "Roboto Slab", serif;
     font-optical-sizing: auto;
-
     font-style: normal;
 
 }
 
 .main-btn-contact {
     background-color: orangered;
+    /* width: 100%; */
 }
 
 .main-btn-contact:hover {

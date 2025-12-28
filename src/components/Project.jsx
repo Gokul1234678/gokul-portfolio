@@ -9,6 +9,9 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 // import projects images
+import crudImg from "../assets/images/projectsImages/crud.png";
+import cableImg from "../assets/images/projectsImages/cable.png";
+import ecommerceImg  from "../assets/images/projectsImages/ecommerce.png";
 import weatherImg from "../assets/images/projectsImages/weather.jpg";
 import currencyImg from "../assets/images/projectsImages/currency.PNG";
 import todoImg from "../assets/images/projectsImages/todo.png";
@@ -26,59 +29,105 @@ import "../assets/styles/Project.css";
 const projects = [
     {
         id: 1,
+        title: "Cable Management System (MERN Stack)",
+        year: "2025",
+        description:
+            "A full-stack web application for cable service providers to manage customers, plans, and payments efficiently. Built using the MERN stack with a responsive admin dashboard and RESTful API integration.",
+        image: cableImg,
+        tech: ["React.js", "Node.js", "Express.js", "MongoDB"],
+        code: "https://github.com/Gokul1234678/cable-admin",
+        live: "https://cable-admin.vercel.app/",
+    },
+    {
+        id: 2,
+        title: "MERN CRUD Application",
+        year: "2025",
+        description:
+            "A full-stack CRUD web application with image upload support. Users can add, view, edit, and delete records, with profile images stored securely using Cloudinary.",
+        image: crudImg,
+        tech: ["React.js", "Node.js", "Express.js", "MongoDB", "Cloudinary"],
+        code: "https://github.com/Gokul1234678/mern-crud-app",
+        live: "https://mern-crud-gokul.vercel.app/",
+    },
+    {
+        id: 3,
+        title: "E-Commerce Website (React)",
+        year: "2025",
+        description:
+            "Built a responsive e-commerce website using React with dynamic product listing, search, sorting, cart, and wishlist features. Implemented secure user login and protected routes using Firebase. Integrated FakeStore API and deployed on Netlify.",
+        image: ecommerceImg,
+        tech: ["React.js", "CSS", "React Router", "FakeStore API", "Firebase"],
+        code: "https://github.com/Gokul1234678/react-ecommerce-simulation",
+        live: "https://ecommerce-react16.netlify.app/",
+    },
+    {
+        id: 4,
+        title: "Portfolio Website",
+        year: "2024",
+        description:
+            "A personal portfolio website showcasing my projects, skills, and contact details with smooth animations and responsive design.",
+        image: portfolio,
+        tech: ["React.js", "CSS", "AOS", "Netlify"],
+        code: "https://github.com/Gokul1234678/gokul-portfolio/",
+        live: "https://gokul-selvan-dev.netlify.app/",
+    },
+    {
+        id: 5,
         title: "Weather App",
-        description: "A responsive weather application that fetches real-time weather data using an API.",
+        year: "2024",
+        description:
+            "A responsive weather application that fetches real-time temperature, humidity, and weather conditions using an external API. Designed with a clean UI and fast loading experience.",
         image: weatherImg,
         tech: ["HTML", "CSS", "JavaScript", "API"],
         code: "https://github.com/Gokul1234678/weather-Application",
         live: "https://lucent-fenglisu-eaa7a4.netlify.app/",
     },
     {
-        id: 2,
-        title: "Portfolio",
-        description: "A personal portfolio website showcasing my projects, skills, and contact information.",
-        image: portfolio,
-        tech: ["react","HTML", "CSS", "AOS","netlify"],
-        code: "https://github.com/Gokul1234678/gokul-portfolio/",
-        live: "https://gokul-selvan-dev.netlify.app/",
-    },
-    {
-        id: 3,
+        id: 6,
         title: "Currency Converter",
-        description: "A responsive currency converter app to convert values between different currencies using an API.",
+        year: "2024",
+        description:
+            "A simple and responsive currency converter to convert amounts between international currencies. Uses a public API to fetch live exchange rates and displays accurate results instantly.",
         image: currencyImg,
         tech: ["HTML", "CSS", "JavaScript", "API"],
         code: "https://github.com/Gokul1234678/Currency-Converter",
         live: "https://ags-currency-converter.netlify.app/",
     },
     {
-        id: 4,
+        id: 7,
         title: "Todo List",
-        description: "A responsive calculator app for performing basic operations.",
+        year: "2023",
+        description:
+            "A clean and responsive to-do list application with add, edit, and delete functionality. Designed with a simple UI and fast interaction experience.",
         image: todoImg,
         tech: ["HTML", "CSS", "JavaScript"],
         code: "https://github.com/Gokul1234678/to-do-list",
         live: "https://ags16.neocities.org/todo%20list/todo%20list",
     },
     {
-        id: 5,
+        id: 8,
         title: "React Calculator",
-        description: "A responsive calculator app for performing basic operations.",
+        year: "2024",
+        description:
+            "A modern calculator built with React for performing basic arithmetic operations. Responsive UI with smooth button interactions and accurate calculations.",
         image: calculatorImg,
-        tech: ["React","HTML", "CSS",],
+        tech: ["React.js", "CSS"],
         code: "https://github.com/Gokul1234678/react_calculator",
         live: "https://react-calculator-chi-opal.vercel.app/",
     },
     {
-        id: 6,
+        id: 9,
         title: "Guest House Website",
-        description: "An internship project where I redesigned the King Sukh Guest House website with a modern responsive layout.",
+        year: "2024",
+        description:
+            "A redesigned website for the King Sukh Guest House, created during an internship assignment. Features a modern layout, improved visuals, and responsive design.",
         image: GuestHouseImg,
         tech: ["HTML", "CSS", "JavaScript"],
         code: "https://github.com/Gokul1234678/kingsukh-guest-house-website/tree/main",
         live: "https://ags16.neocities.org/guest%20house%20website/",
     },
 ];
+
 
 
 const ProjectSlider = () => {

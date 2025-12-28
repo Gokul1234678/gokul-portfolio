@@ -37,14 +37,14 @@ const Home = () => {
 
                             <div className="main-btn-container" data-aos="fade-up">
                                 <a href="#contact" className="main-btn-contact">Contact me</a>
-                                <a
+                                {/* <a
                                     className="main-btn-resume"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     href="https://drive.google.com/file/d/1abT69J_SFPwafCO357mh5QZ7Urn5t3BX/view?usp=drivesdk"
                                 >
                                     Check Resume
-                                </a>
+                                </a> */}
                             </div>
 
                             <div className="social" data-aos="fade-up" data-aos-delay="300">

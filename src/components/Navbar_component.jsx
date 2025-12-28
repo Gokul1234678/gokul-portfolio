@@ -34,7 +34,7 @@ const Navbar = () => {
             <li data-aos="fade-down" data-aos-delay="400">
               <a href="#Skills">Skills</a>
             </li>
-            <li data-aos="fade-down" data-aos-delay="500">
+            {/* <li data-aos="fade-down" data-aos-delay="500">
               <a
                 href="https://drive.google.com/file/d/1abT69J_SFPwafCO357mh5QZ7Urn5t3BX/view?usp=drivesdk"
                 target="_blank"
@@ -42,7 +42,7 @@ const Navbar = () => {
               >
                 Resume
               </a>
-            </li>
+            </li> */}
             <li data-aos="fade-down" data-aos-delay="600">
               {/* <a href="/certificates" target="_blank" rel="noopener noreferrer">
                 Certificates
