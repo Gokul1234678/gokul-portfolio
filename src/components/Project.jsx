@@ -15,7 +15,7 @@ import "swiper/css/navigation";
 
 // Import project images
 import cableImg from "../assets/images/projectsImages/cable.png";
-import mobileMartImg from "../assets/images/projectsImages/mm.png";
+import mobileMartImg from "../assets/images/projectsImages/mm.PNG";
 import vetriMatrimonyImg from "../assets/images/projectsImages/vetriMatrimonyImg.jpg";
 
 // Project CSS
